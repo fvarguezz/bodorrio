@@ -4,56 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina en Desarrollo</title>
-    <!-- Incluir Bootstrap desde el CDN -->
-    {% load static %}
-    <link rel="stylesheet" type="text/css" href="{% static 'invitacion/styles.css' %}">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    
+    <title>Pagina en Desarrollo</title>   
+    <link rel="stylesheet" href="../../static/invitacion/styles.css">
 </head>
 
-<body>
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-12 text-center">
-                <h1 class="display-4"><b>Nos Casamos!</b></h1>
-                <p class="lead">Nos gustaria que formaras parte de este momento especial para nosotros en nuestras vidas.</p>
-                <hr class="my-4">
-                <p><strong>Fecha:</strong> </p>
-                <p><strong>Dirección:</strong> {{ evento.direccion }}</p>
-            </div>
+<body class="pagina">
+        <!-- SECCION PRINCIPAL -->
+
+        <div class="encabezado">
+            <H1><B><em>Sharon & Felipe</em></B></H1>
         </div>
-        <div class="row mt-5">
-            <div class="col-12 text-center">
-                <h3>Detalles Adicionales</h3>
-                <p>¡Nos encantaría verte en nuestra boda!</p>
-                <p>Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos.</p>
-            </div>
-        </div>
-    </div>
+
+
+
+        <!-- SECCION PARA AGRADECIMIENTOS Y DESCRIPCION DEL EVENTO -->
+<div>
+
+</div>
+
+
+        <!-- SECCION DE DETALLES PARA EL EVENTO + MAPA -->
+ <div>
+    
+ </div>
 
         <!-- SECCION PARA CONFIRMAR ASISTENCIA -->
-    <div class="row mt-5">
-        <div class="col-12 text-center">
-            <h3>Confirmación de Asistencia</h3>
-            <p>Por favor, confirma tu asistencia a nuestra boda. ¡Nos encantaría verte!</p>
-            <form method="post">
-                {% csrf_token %}
-                <div class="form-group">
-                    <label for="nombre">Tu Nombre</label>
-                    <input type="text" class="form-control" width=25% id="nombre" name="nombre" required>
-                </div>
-                <div class="form-group">
-                    <label for="asistencia">Asistiré</label>
-                    <select class="form-control" id="asistencia" name="asistencia" required>
-                        <option value="Si">Sí</option>
-                        <option value="No">No</option>
-                    </select>
-                </div>
-                <button type="submit" class="btn btn-primary">Confirmar</button>
-            </form>
-        </div>
+<div>   
+</div>
+
+
+
+
+
+        <!-- SECCION PARA CONFIRMAR ASISTENCIA -->
+    <div>
+
     </div>
+
+
+
+
+
+
+
 
 
 

@@ -1,76 +1,14 @@
-/* Estilos básicos para el cuerpo de la página */
-body {
-    background-color: #2541e2;  /* Color de fondo gris claro */
-    font-family: 'Arial', sans-serif;  /* Fuente predeterminada */
-    margin: 0;  /* Eliminar márgenes */
-    padding: 0;  /* Eliminar rellenos */
+.pagina{
+    
+    background-color: pink;
 }
 
-/* Estilos para el contenedor principal */
-.container {
-    background-color: #ffffff;  /* Fondo blanco para el contenido */
-    padding: 30px;  /* Relleno interno */
-    border-radius: 10px;  /* Bordes redondeados */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  /* Sombra suave */
-    margin-top: 20px;  /* Espacio en la parte superior */
-}
 
-/* Estilos para los encabezados */
-h1, h3 {
-    color: #0062cc;  /* Color azul para los encabezados */
-}
+.encabezado {
+    text-align: center;
+    background-color: white;
+    width: 100%;
+    height: 50vb;
+    line-height: 450px; /* Centra el texto verticalmente (si el div tiene una altura fija) */
 
-h1 {
-    font-size: 3em;  /* Tamaño más grande para el título */
-    margin-bottom: 20px;  /* Espacio debajo del encabezado */
-}
-
-h3 {
-    font-size: 1.5em;  /* Tamaño más pequeño para los subtítulos */
-    margin-bottom: 15px;
-}
-
-/* Estilo para los botones */
-.btn-primary {
-    background-color: #0062cc;  /* Fondo azul para los botones */
-    border: none;  /* Eliminar borde */
-    color: white;  /* Texto blanco */
-    padding: 10px 20px;  /* Relleno interno del botón */
-    font-size: 1em;  /* Tamaño de fuente */
-    border-radius: 5px;  /* Bordes redondeados */
-}
-
-/* Efecto al pasar el ratón sobre los botones */
-.btn-primary:hover {
-    background-color: #004085;  /* Cambio de color cuando pasas el ratón */
-    cursor: pointer;  /* Cambiar el cursor para indicar que el botón es clickeable */
-}
-
-/* Estilo para el formulario */
-.form-group label {
-    font-weight: bold;  /* Etiquetas de formulario en negrita */
-}
-
-.form-control {
-    border-radius: 5px;  /* Bordes redondeados para los campos de entrada */
-    padding: 10px;  /* Relleno interno */
-    width: 100%;  /* Asegurarse de que ocupe todo el ancho disponible */
-    margin-bottom: 15px;  /* Espacio debajo de los campos */
-}
-
-/* Espaciado entre secciones */
-.row {
-    margin-bottom: 30px;  /* Espacio entre las filas */
-}
-
-/* Ajustes de texto */
-.lead {
-    font-size: 1.25em;  /* Texto destacado con un tamaño mayor */
-    color: #555555;  /* Color gris para texto secundario */
-}
-
-hr.my-4 {
-    border-top: 2px solid #0062cc;  /* Línea horizontal azul */
-    margin-top: 30px;
-    margin-bottom: 30px;
 }
