@@ -4,12 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Invitación de Boda</title>
+    <!-- Incluir Bootstrap desde el CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
-
 <body>
-    <h1>{{ evento.nombre }}</h1>
-    <p>{{ evento.descripcion }}</p>
-    <p><strong>Fecha:</strong> {{ evento.fecha }}</p>
-    <p><strong>Dirección:</strong> {{ evento.direccion }}</p>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="display-4">Nos casamos!</h1>
+                <p class="lead">Nos gustaria que formaras parte de este momento especial para nosotros en nuestras vidas.</p>
+                <hr class="my-4">
+                <p><strong>Fecha:</strong> </p>
+                <p><strong>Dirección:</strong> {{ evento.direccion }}</p>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-12 text-center">
+                <h3>Detalles Adicionales</h3>
+                <p>¡Nos encantaría verte en nuestra boda!</p>
+                <p>Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Incluir Bootstrap JS y dependencias -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
