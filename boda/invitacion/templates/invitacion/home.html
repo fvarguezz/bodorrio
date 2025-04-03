@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Invitación de Boda</title>
+    <title>Pagina en Desarrollo</title>
     <!-- Incluir Bootstrap desde el CDN -->
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'invitacion/styles.css' %}">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
 </head>
+
 <body>
     <div class="container mt-5">
         <div class="row">
             <div class="col-12 text-center">
-                <h1 class="display-4">Nos casamos!</h1>
+                <h1 class="display-4"><b>Nos Casamos!</b></h1>
                 <p class="lead">Nos gustaria que formaras parte de este momento especial para nosotros en nuestras vidas.</p>
                 <hr class="my-4">
                 <p><strong>Fecha:</strong> </p>
@@ -27,9 +32,36 @@
         </div>
     </div>
 
+        <!-- SECCION PARA CONFIRMAR ASISTENCIA -->
+    <div class="row mt-5">
+        <div class="col-12 text-center">
+            <h3>Confirmación de Asistencia</h3>
+            <p>Por favor, confirma tu asistencia a nuestra boda. ¡Nos encantaría verte!</p>
+            <form method="post">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="nombre">Tu Nombre</label>
+                    <input type="text" class="form-control" width=25% id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="asistencia">Asistiré</label>
+                    <select class="form-control" id="asistencia" name="asistencia" required>
+                        <option value="Si">Sí</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Confirmar</button>
+            </form>
+        </div>
+    </div>
+
+
+
+
     <!-- Incluir Bootstrap JS y dependencias -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
 </body>
 </html>
